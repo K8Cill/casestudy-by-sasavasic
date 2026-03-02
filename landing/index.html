@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>casestudy-by-sasavasic — Presentation Decks</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    #decks {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      display: block;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      border-color: #38bdf8;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #f1f5f9;
+    }
+
+    .card p {
+      font-size: 0.875rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #475569;
+      text-align: center;
+    }
+
+    footer a { color: #38bdf8; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>casestudy-by-sasavasic</h1>
+    <p>Multi-deck Slidev presentations — choose a deck below to get started</p>
+  </header>
+
+  <section id="decks" aria-label="Available decks">
+
+    <a class="card" href="decks/intro/">
+      <h2>📖 Introduction</h2>
+      <p>Overview of the repository structure, workflow, and how to add new decks.</p>
+    </a>
+
+    <a class="card" href="decks/ai-skills/">
+      <h2>🤖 AI Skill Integration</h2>
+      <p>How to use GitHub Copilot and Claude (Anthropic) with Slidev for AI-assisted slide authoring.</p>
+    </a>
+
+  </section>
+
+  <footer>
+    Built with <a href="https://sli.dev/" target="_blank" rel="noopener">Slidev</a> ·
+    Source on <a href="https://github.com/K8Cill/casestudy-by-sasavasic" target="_blank" rel="noopener">GitHub</a> ·
+    See <a href="INSTRUCTIONS.md" target="_blank" rel="noopener">INSTRUCTIONS.md</a> to add a deck
+  </footer>
+</body>
+</html>

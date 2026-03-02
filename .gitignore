@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Slidev build output
+dist/
+_site/
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Editor directories
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# npm/pnpm lock files (keep package-lock.json; ignore others if not used)
+yarn.lock
+pnpm-lock.yaml
