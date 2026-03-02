@@ -1,0 +1,15 @@
+{
+  "name": "casestudy-by-sasavasic",
+  "private": true,
+  "workspaces": [
+    "decks/*"
+  ],
+  "scripts": {
+    "dev:intro":     "npm run dev --workspace=decks/intro",
+    "dev:ai-skills": "npm run dev --workspace=decks/ai-skills",
+    "build:all":     "npm run build --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

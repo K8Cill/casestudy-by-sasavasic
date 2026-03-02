@@ -1,0 +1,12 @@
+{
+  "name": "deck-intro",
+  "private": true,
+  "scripts": {
+    "dev":   "slidev slides.md",
+    "build": "slidev build slides.md --base /casestudy-by-sasavasic/decks/intro/ --out dist"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.50.0",
+    "@slidev/theme-default": "latest"
+  }
+}
